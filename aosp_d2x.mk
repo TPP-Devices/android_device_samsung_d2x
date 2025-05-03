@@ -36,11 +36,20 @@ TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_SCREEN_HEIGHT := 3040
 TARGET_SCREEN_WIDTH := 1440
 
-## Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+## Inherit some common The Pixel Project stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+# PixelProject Features
+     TARGET_SUPPORTS_QUICK_TAP := true
+     TARGET_SUPPORTS_GOOGLE_RECORDER := true
+     TARGET_INCLUDE_STOCK_ARCORE := true
+     TARGET_INCLUDE_LIVE_WALLPAPERS := true
+     TARGET_ENABLE_BLUR := true
+     CUSTOM_MAINTAINER := MODEDGES
+     CUSTOM_BUILD_TYPE := OFFICIAL
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := lineage_d2x
+PRODUCT_NAME := aosp_d2x
 PRODUCT_DEVICE := d2x
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-N976B

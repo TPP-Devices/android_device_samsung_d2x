@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_d2x.mk
+    $(LOCAL_DIR)/aosp_d2x.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_d2x-eng \
-    lineage_d2x-user \
-    lineage_d2x-userdebug
+    aosp_d2x-eng \
+    aosp_d2x-user \
+    aosp_d2x-userdebug
